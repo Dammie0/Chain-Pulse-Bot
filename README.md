@@ -50,6 +50,7 @@ on Telegram to get started.
 - Binance API
 - QuickChart.io
 - Python 3
+- Anthropic sonnet 4.6 and OpenAI Gpt 4o mini for LLMs
 
 #Commands
 | Command | Description |
