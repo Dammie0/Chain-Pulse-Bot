@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.13",
+    "lastTouchedAt": "2026-04-03T10:56:20.348Z"
+  },
+  "env": {
+    "BINANCE_API_KEY": " mpPjJEYwr9YigFeJ9La6owEdDGjExRB0S1jxOdWuOXshAUAwsGx9Myl9HH5WfSia "
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-17T22:39:02.549Z",
+    "lastRunVersion": "2026.3.13",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "openai:default": {
+        "provider": "openai",
+        "mode": "api_key"
+      },
+      "anthropic:default": {
+        "provider": "anthropic",
+        "mode": "api_key"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openai/gpt-4.1-nano",
+        "fallbacks": [
+          "openai/gpt-4.1-nano"
+        ]
+      },
+      "workspace": "/root/.openclaw/workspace"
+    },
+    "list": [
+      {
+        "id": "main",
+        "name": "ChainPulse",
+        "workspace": "/root/.openclaw/workspace"
+      }
+    ]
+  },
+  "tools": {
+    "profile": "full"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "command-logger": {
+          "enabled": true
+        },
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "open",
+      "botToken": "8796407152:AAHwEo4BuB5m_KhbplGvv-AKNd3xB0y6CvI",
+      "allowFrom": [
+        "*"
+      ],
+      "groupPolicy": "open",
+      "streaming": "partial"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": " 4ff27a35d367979d6fe7f513fd3b5cd29d478d7da42f934e "
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "calendar.add",
+        "reminders.add",
+        "sms.send"
+      ]
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    },
+    "entries": {
+      "openai-whisper-api": {
+        "apiKey": " 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 "
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "telegram": {
+        "enabled": true
+      }
+    }
+  }
+}
